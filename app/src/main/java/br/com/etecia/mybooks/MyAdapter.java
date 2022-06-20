@@ -37,12 +37,22 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
+        holder.textBook.setText(livros.get(position).getTitulo());
+        holder.imageBook.setImageResource(livros.get(position).getMiniatura());
+
+        holder.cardBook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
     }
 
     @Override
     public int getItemCount() {
 
-        return 0;
+        return livros.size();
     }
 
     //Inner Class com o ViewHolder
