@@ -12,31 +12,42 @@
         android:orientation="vertical">
 
     <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:src="@drawable/sol_para_todos"
         android:layout_width="170dp"
         android:layout_height="250dp"/>
 
     <TextView
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="O sol é para todos"/>
 
     <TextView
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Categoria"/>
 
     <TextView
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Descrição"/>
 
     <RatingBar
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/Widget.AppCompat.RatingBar.Indicator"
         />
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,8 +57,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="(39.884 Avaliações)"/>
+</LinearLayout>
 
     <TextView
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Editora"/>
