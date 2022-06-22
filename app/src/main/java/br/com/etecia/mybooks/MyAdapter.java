@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -39,13 +40,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
         holder.textBook.setText(livros.get(position).getTitulo());
         holder.imageBook.setImageResource(livros.get(position).getMiniatura());
-
+        
+        //Criar o evento de Click nos Cards
         holder.cardBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Toast.makeText(context, "Cliquei no card \n" + (livros.get(position).getTitulo()), Toast.LENGTH_SHORT).show();
             }
         });
+
+
 
     }
 
