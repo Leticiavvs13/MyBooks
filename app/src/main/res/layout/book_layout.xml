@@ -8,15 +8,16 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize">
+        android:layout_height="50dp">
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_share"
-        />
+        android:layout_height="76dp"
+        android:layout_gravity="right"
+        android:backgroundTint="@color/corFloantingButton"
+        android:src="@drawable/ic_baseline_share" />
 
     <LinearLayout
         android:layout_marginTop="50dp"
@@ -29,31 +30,46 @@
             android:layout_height="250dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:src="@drawable/sol_para_todos" />
+            android:src="@drawable/sol_para_todos"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="O sol é para todos" />
+            android:text="O sol é para todos"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Categoria" />
+            android:text="Temática Social"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"/>
 
         <TextView
+            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Descrição" />
+            android:text="Uma história sobre raça e classe."
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            />
 
         <RatingBar
-            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:id="@+id/rb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center" />
+            android:isIndicator="false"
+            style="@style/RatingColor"
+            android:numStars="5"
+            android:stepSize="1"
+            android:layout_gravity="center"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -64,7 +80,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4.4" />
+                android:text="4.4  "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -76,7 +95,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Editora" />
+            android:text="Editora 2022"
+            android:layout_marginTop="20dp"/>
     </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
